@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#faf8f4" />
+	<meta name="description" content="Nexora Studio - a premium creative landing page with responsive carousels and cinematic visuals." />
+	<title>Nexora Studio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231a1510'/%3E%3Cpath d='M18 40c6-12 22-18 28-16-4 10-12 22-25 22-2 0-3-1-3-2z' fill='%23c4b0e0'/%3E%3Ccircle cx='43' cy='21' r='5' fill='%23e8b4a0'/%3E%3C/svg%3E" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#home">Nexora<em>.</em></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="nav-cta" href="#contact">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#work" onclick="closeMob()">Work</a>
+  <a href="#process" onclick="closeMob()">Process</a>
+  <a href="#testimonials" onclick="closeMob()">Testimonials</a>
+  <a class="mob-cta" href="#contact" onclick="closeMob()">Get Started</a>
+</nav>
+
+<!-- HERO -->
+<main id="home">
+<section class="hero">
+    <!-- Background Video -->
+<video class="hero-video" autoplay muted loop playsinline>
+  <source src="assets/video/12681526_3840_2160_30fps.mp4" type="video/mp4">
+</video>
+
+<!-- Dark Overlay -->
+<div class="hero-video-overlay"></div>
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow reveal reveal-delay-1">
+        <span class="eyebrow-dot"></span>
+        #1 Digital Marketing Studio
+      </div>
+
+      <h1 class="reveal reveal-delay-1">
+        Grow faster with<br><em>marketing</em> that<br>actually converts.
+      </h1>
+
+      <div class="hero-btns reveal reveal-delay-3">
+        <a class="btn-primary" href="#contact">Start growing today →</a>
+        <a class="btn-outline" href="#work">See our work</a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal reveal-delay-2">
+      <div class="hero-visual">
+
+        <!-- Floating card 1 -->
+        <div class="hv-float-1">
+          <div class="hv-float-icon">📈</div>
+          <div>
+            <div class="hv-float-label">Monthly Traffic</div>
+            <div class="hv-float-val">+284%</div>
+          </div>
+        </div>
+
+        <!-- Main dashboard card -->
+        <div class="hv-card-main">
+          <div class="hv-label">Campaign Performance · Q1 2025</div>
+          <div class="hv-title">Revenue from Digital Channels</div>
+
+          <!-- Bar chart illustration -->
+          <div class="hv-chart">
+            <div class="bar" style="height:35%"><span class="bar-val">Jan</span></div>
+            <div class="bar" style="height:50%"><span class="bar-val">Feb</span></div>
+            <div class="bar hi" style="height:65%"><span class="bar-val">Mar</span></div>
+            <div class="bar" style="height:45%"><span class="bar-val">Apr</span></div>
+            <div class="bar hi" style="height:80%"><span class="bar-val">May</span></div>
+            <div class="bar hi" style="height:100%"><span class="bar-val">Jun</span></div>
+            <div class="bar" style="height:70%"><span class="bar-val">Jul</span></div>
+          </div>
+
+          <div class="hv-metric-row">
+            <div class="hv-metric">
+              <strong>4.9×</strong>
+              <span>ROAS</span>
+            </div>
+            <div class="hv-metric">
+              <strong>68%</strong>
+              <span>Conv. Rate</span>
+            </div>
+            <div class="hv-metric">
+              <strong>$2.1M</strong>
+              <span>Revenue</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating card 2 -->
+        <div class="hv-float-2">
+          <div>
+            <div class="hv-float-label">Organic Reach</div>
+            <div class="hv-float-val">1.2M views</div>
+          </div>
+          <span class="hv-pill pill-up">↑ 91%</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS TICKER -->
+<div class="clients-bar">
+  <div class="ticker-wrap">
+    <span class="ticker-item">Lumina Retail</span>
+    <span class="ticker-item">Riviera Auto</span>
+    <span class="ticker-item">Studio Noir</span>
+    <span class="ticker-item">Velvet Commerce</span>
+    <span class="ticker-item">Atlas Finance</span>
+    <span class="ticker-item">Helix Health</span>
+    <span class="ticker-item">Nova Ventures</span>
+    <span class="ticker-item">Orion Tech</span>
+    <span class="ticker-item">Lumina Retail</span>
+    <span class="ticker-item">Riviera Auto</span>
+    <span class="ticker-item">Studio Noir</span>
+    <span class="ticker-item">Velvet Commerce</span>
+    <span class="ticker-item">Atlas Finance</span>
+    <span class="ticker-item">Helix Health</span>
+    <span class="ticker-item">Nova Ventures</span>
+    <span class="ticker-item">Orion Tech</span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section class="section services-section" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Full-spectrum digital<br>marketing <em>services</em></h2>
+      <p class="section-sub">From search to social, we cover every channel your audience lives on — with strategy and execution that drives measurable growth.</p>
+    </div>
+
+    <div class="services-swiper-wrap reveal">
+      <div class="swiper servicesSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="svc-card">
+              <div class="svc-num-big">01</div>
+              <div class="svc-icon-wrap ic-1">🔍</div>
+              <h3>SEO & Content</h3>
+              <p>Rank higher, stay there. We craft keyword strategies, technical audits, and content that climbs Google and keeps compounding returns over time.</p>
+              <span class="svc-tag">Search · Authority · Rankings</span>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="svc-card">
+              <div class="svc-num-big">02</div>
+              <div class="svc-icon-wrap ic-2">🎯</div>
+              <h3>Paid Advertising</h3>
+              <p>Google Ads, Meta, TikTok — we build campaigns with obsessive targeting, creative testing, and continuous optimization for maximum ROAS.</p>
+              <span class="svc-tag">PPC · Social Ads · Retargeting</span>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="svc-card">
+              <div class="svc-num-big">03</div>
+              <div class="svc-icon-wrap ic-3">📱</div>
+              <h3>Social Media</h3>
+              <p>Community building, content calendars, influencer partnerships — we grow your presence organically and turn followers into loyal brand advocates.</p>
+              <span class="svc-tag">Instagram · LinkedIn · TikTok</span>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="svc-card">
+              <div class="svc-num-big">04</div>
+              <div class="svc-icon-wrap ic-4">✉️</div>
+              <h3>Email Marketing</h3>
+              <p>Automated flows and broadcast campaigns that nurture leads, reduce churn, and generate revenue while you sleep. Average 42× ROI per $1 spent.</p>
+              <span class="svc-tag">Automation · Nurture · CRM</span>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="svc-card">
+              <div class="svc-num-big">05</div>
+              <div class="svc-icon-wrap ic-5">📊</div>
+              <h3>Analytics & CRO</h3>
+              <p>Data is useless without action. We install tracking, analyse funnels, and run A/B tests that systematically lift conversion rates and lower acquisition cost.</p>
+              <span class="svc-tag">Data · Testing · Growth</span>
+            </article>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RESULTS -->
+<section class="section results-section" id="results">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Real Results</div>
+      <h2 class="section-title" style="color:#fff;">Numbers that prove<br>the <em style="color:var(--purple-300)">difference</em></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.5);">Every metric below comes from real client campaigns managed by our team over the last 24 months.</p>
+    </div>
+
+    <div class="results-grid reveal">
+      <div class="result-item">
+        <div class="result-num">340%</div>
+        <div class="result-label">Average ROI</div>
+        <div class="result-sub">Across all paid channels</div>
+      </div>
+      <div class="result-item">
+        <div class="result-num">10M+</div>
+        <div class="result-label">Leads Generated</div>
+        <div class="result-sub">Qualified, ready-to-buy</div>
+      </div>
+      <div class="result-item">
+        <div class="result-num">4.9×</div>
+        <div class="result-label">Avg. ROAS</div>
+        <div class="result-sub">Paid advertising return</div>
+      </div>
+      <div class="result-item">
+        <div class="result-num">800+</div>
+        <div class="result-label">Brands Scaled</div>
+        <div class="result-sub">In 40+ industries</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WORK -->
+<section class="section work-section" id="work">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Case Studies</div>
+      <h2 class="section-title">Campaigns that moved<br>the <em>needle</em></h2>
+      <p class="section-sub">Swipe through bold case studies — each driven by strategy, creative, and obsessive optimisation.</p>
+    </div>
+
+    <div class="work-swiper-wrap reveal">
+      <div class="swiper workSwiper">
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+  <article class="work-card">
+
+    <div class="work-bg">
+      <img src="assets/images/1.jpg" alt="Lumina Boutique">
+    </div>
+
+    <div class="work-overlay">
+      <div class="work-info">
+        <h4>Lumina Boutique</h4>
+        <p>E-commerce SEO + Paid Social</p>
+        <span class="work-cat">+420% Revenue in 6 Months</span>
+      </div>
+    </div>
+
+    <div class="work-arrow">↗</div>
+
+  </article>
+</div>
+
+        <div class="swiper-slide">
+  <article class="work-card">
+
+    <div class="work-bg">
+      <img src="assets/images/2.jpg" alt="Lumina Boutique">
+    </div>
+
+    <div class="work-overlay">
+      <div class="work-info">
+        <h4>Lumina Boutique</h4>
+        <p>E-commerce SEO + Paid Social</p>
+        <span class="work-cat">+420% Revenue in 6 Months</span>
+      </div>
+    </div>
+
+    <div class="work-arrow">↗</div>
+
+  </article>
+</div>
+
+          <div class="swiper-slide">
+  <article class="work-card">
+
+    <div class="work-bg">
+      <img src="assets/images/3.jpg" alt="Lumina Boutique">
+    </div>
+
+    <div class="work-overlay">
+      <div class="work-info">
+        <h4>Lumina Boutique</h4>
+        <p>E-commerce SEO + Paid Social</p>
+        <span class="work-cat">+420% Revenue in 6 Months</span>
+      </div>
+    </div>
+
+    <div class="work-arrow">↗</div>
+
+  </article>
+</div>
+
+         <div class="swiper-slide">
+  <article class="work-card">
+
+    <div class="work-bg">
+      <img src="assets/images/4.jpg" alt="Lumina Boutique">
+    </div>
+
+    <div class="work-overlay">
+      <div class="work-info">
+        <h4>Lumina Boutique</h4>
+        <p>E-commerce SEO + Paid Social</p>
+        <span class="work-cat">+420% Revenue in 6 Months</span>
+      </div>
+    </div>
+
+    <div class="work-arrow">↗</div>
+
+  </article>
+</div>
+
+        </div>
+        <div class="swiper-pagination work-pag"></div>
+        <div class="swiper-button-prev work-prev"></div>
+        <div class="swiper-button-next work-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROCESS -->
+<section class="section process-section" id="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Our Process</div>
+      <h2 class="section-title">How we turn strategy<br>into <em>revenue</em></h2>
+      <p class="section-sub">A structured, proven four-step process that takes you from brand audit to sustainable growth — without the guesswork.</p>
+    </div>
+
+    <div class="process-grid reveal">
+
+      <div class="process-item">
+        <div class="process-num">01</div>
+        <div class="process-content">
+          <h3>Deep Discovery</h3>
+          <p>We audit your brand, analyse your competitors, map your audience, and identify the highest-leverage channels — before a single dollar is spent on ads or content.</p>
+        </div>
+        <div class="process-icon">🔬</div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-num">02</div>
+        <div class="process-content">
+          <h3>Strategy & Blueprint</h3>
+          <p>A clear, prioritised 90-day growth plan covering channels, messaging, budgets, KPIs, and creative direction — all aligned to your specific revenue goals.</p>
+        </div>
+        <div class="process-icon">🗺️</div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-num">03</div>
+        <div class="process-content">
+          <h3>Launch & Execute</h3>
+          <p>Our team builds campaigns, creates content, and launches across every agreed channel — with weekly reporting and proactive communication baked in from day one.</p>
+        </div>
+        <div class="process-icon">🚀</div>
+      </div>
+
+      <div class="process-item">
+        <div class="process-num">04</div>
+        <div class="process-content">
+          <h3>Optimise & Scale</h3>
+          <p>Data-driven iteration, creative refresh cycles, and scaling of winners — we compound your results month over month until growth becomes a systematic machine.</p>
+        </div>
+        <div class="process-icon">📈</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="section testi-section" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Client Love</div>
+      <h2 class="section-title">Real results from<br>real <em>partners</em></h2>
+      <p class="section-sub">Don't take our word for it. Here's what the brands we've grown have to say about working with Nexora.</p>
+    </div>
+
+    <div class="testi-swiper-wrap reveal">
+      <div class="swiper testiSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="testi-card">
+              <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+              <span class="testi-q-mark">"</span>
+              <p class="testi-quote">Nexora didn't just run our ads — they rebuilt our entire growth engine. Within 90 days our CAC dropped 54% and revenue doubled. It felt like cheat codes.</p>
+              <div class="testi-author">
+                <div class="testi-avatar av-1">A</div>
+                <div>
+                  <div class="testi-name">Ariana Miles</div>
+                  <div class="testi-role">CEO, Lumina Boutique</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="testi-card">
+              <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+              <span class="testi-q-mark">"</span>
+              <p class="testi-quote">The SEO strategy they built took us from page 5 to position 1 for our top keywords in four months. Organic traffic is now our biggest revenue channel. Remarkable.</p>
+              <div class="testi-author">
+                <div class="testi-avatar av-2">D</div>
+                <div>
+                  <div class="testi-name">Daniel Scott</div>
+                  <div class="testi-role">Founder, Atlas Finance</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="testi-card">
+              <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+              <span class="testi-q-mark">"</span>
+              <p class="testi-quote">Every agency promised results. Nexora delivered them. Our email sequences alone now generate $80K/month in recurring revenue. The ROI is just unmatched.</p>
+              <div class="testi-author">
+                <div class="testi-avatar av-3">S</div>
+                <div>
+                  <div class="testi-name">Sana Patel</div>
+                  <div class="testi-role">CMO, Helix Health</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="testi-card">
+              <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+              <span class="testi-q-mark">"</span>
+              <p class="testi-quote">From zero to $2.1M ARR in 18 months. Nexora's paid strategy and content machine were fundamental to that growth. Genuinely the best investment we made as a startup.</p>
+              <div class="testi-author">
+                <div class="testi-avatar av-4">M</div>
+                <div>
+                  <div class="testi-name">Marc Dupont</div>
+                  <div class="testi-role">Co-Founder, Orion SaaS</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="swiper-pagination testi-pag"></div>
+        <div class="swiper-button-prev testi-prev"></div>
+        <div class="swiper-button-next testi-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="cta-label">✦ Limited intake — 3 spots open this month</span>
+      <h2>Ready to grow<br>beyond your <em>limits?</em></h2>
+      <p>Book a free 30-minute strategy call. We'll audit your current marketing, identify the biggest opportunities, and map a clear growth path — no strings attached.</p>
+      <div class="cta-actions">
+        <a class="btn-gold" href="#services">Book Free Strategy Call</a>
+        <a class="btn-ghost" href="#work">View Case Studies</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Nexora<em>.</em></div>
+        <p class="footer-desc">A premium digital marketing studio that turns strategy into sustainable growth. Data-driven, creatively led, results obsessed.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="#services">SEO & Content</a>
+        <a href="#services">Paid Advertising</a>
+        <a href="#services">Social Media</a>
+        <a href="#services">Email Marketing</a>
+        <a href="#services">Analytics & CRO</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="#work">Case Studies</a>
+        <a href="#process">Our Process</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <a href="#">hello@nexora.studio</a>
+        <a href="#">+1 (555) 000-1234</a>
+        <a href="#">New York · London · Dubai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Nexora Digital Studio. All rights reserved.</div>
+      <div class="footer-socials">
+        <a class="social-btn" href="#" title="Twitter">𝕏</a>
+        <a class="social-btn" href="#" title="LinkedIn">in</a>
+        <a class="social-btn" href="#" title="Instagram">◎</a>
+        <a class="social-btn" href="#" title="YouTube">▷</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
